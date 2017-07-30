@@ -1,0 +1,39 @@
+# Raspberry Pi Settings - /boot/config.txt
+# http://elinux.org/RPiconfig
+# https://github.com/robertely/dpi666 and http://blog.reasonablycorrect.com/raw-dpi-raspberry-pi/
+# hdmi_cvt=<width> <height> <framerate> <aspect> <margins> <interlaced> <reduced_blanking>
+# hdmi_timing=<h_active_pixels> <h_sync_polarity> <h_front_porch> <h_sync_pulse> <h_back_porch> <v_active_lines> <v_sync_polarity> <v_front_porch> <v_sync_pulse> <v_back_porch> <v_sync_offset_a> <v_sync_offset_b> <pixel_rep> <framerate> <interlaced> <pixel_freq> <aspect>
+# aspect ratio: 1=4:3, 2=14:9, 3=16:9, 4=5:4, 5=16:10, 6=15:9, 7=21:9, 8=64:27
+
+# overscan to adjust image position (test with 0, -16, -32)
+overscan_left=0
+overscan_right=0
+overscan_top=0
+overscan_bottom=0
+
+# disable SPI and I2C
+dtparam=spi=off
+dtparam=i2c_arm=off
+
+# enable TFT Display
+enable_dpi_lcd=1
+display_default_lcd=1
+dpi_group=2
+dpi_mode=87
+
+# uncomment for 480x272 display (TFT043-3)
+#dpi_output_format=454661
+#hdmi_timings=480 0 1 41 2 272 0 2 10 2 0 0 0 60 0 9009000 3
+
+# uncomment for 800x480 display (TFT050-3, TFT070-4)
+#dpi_output_format=454661
+#hdmi_cvt=800 480 60 6 0 0 0
+#can also be used: hdmi_timings=800 0 40 48 88 480 0 13 3 32 0 0 0 60 0 31000000 6
+
+# uncomment for 800x480 display (Adafruit 5" from Robert Ely)
+#dpi_output_format=458773
+#hdmi_timings=800 1 0 48 0 480 0 13 3 32 0 0 0 60 0 23040000 6
+
+# uncomment for 480x272 display (Adafruit 4.3")
+#dpi_output_format=520197
+#hdmi_timings=480 0 40 48 88 272 0 13 3 32 0 0 0 60 0 32000000 3
