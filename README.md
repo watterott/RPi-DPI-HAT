@@ -6,4 +6,5 @@ Raspberry Pi HAT (Hardware Attached on Top) for TFT-Displays with DPI (Display P
 * 40pin connector for TFT-Display
 * LED Backlight Boost Regulator (up to 35V)
 * Single 5V Power Supply via GPIO connector
-* **[Documentation on learn.watterott.com](http://learn.watterott.com/rpi-dpi-hat/)**
+* Open-Source and released under the [Creative Commons Attribution Share-Alike License](https://creativecommons.org/licenses/by-sa/4.0/).
+* **[Documentation on learn.watterott.com](https://learn.watterott.com)**
