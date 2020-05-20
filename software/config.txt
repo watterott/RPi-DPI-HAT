@@ -37,3 +37,16 @@ dpi_mode=87
 # uncomment for 480x272 display (Adafruit 4.3")
 #dpi_output_format=520197
 #hdmi_timings=480 0 40 48 88 272 0 13 3 32 0 0 0 60 0 32000000 3
+
+# 0 degrees - normal
+#display_rotate=0
+# 90 degrees
+#display_rotate=1
+# 180 degrees
+#display_rotate=2
+# 270 degrees
+#display_rotate=3
+# horizontal flip
+#display_rotate=0x10000
+# vertical flip
+#display_rotate=0x20000
